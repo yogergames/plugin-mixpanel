@@ -90,7 +90,7 @@ test_project:engage(mp_properties)
 -- Setting default set-once-properties for profile updates
 -------------------------------------------------------------------------------
 mp_properties = mixpanel.properties.new()
-mp_properties:set({ ["Has signed up"] = true, ["Purchased items"] = {"item 0", "item 1"}})
+mp_properties:set({ ["Has signed up"] = true})
 
 test_project:register_super_properties_once({["Signup platform"] = "Android"})
 test_project:engage(mp_properties)
